@@ -1,0 +1,4 @@
+---
+server_type: prod
+stage_server: https://api.stageserver.com/appapi
+prod_server: https://api.prodserver.com/appapi

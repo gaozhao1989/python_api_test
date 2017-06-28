@@ -1,0 +1,74 @@
+---
+page: login
+method: post
+url: /user/login
+form_data:
+  stage:
+    data:
+      username: stage_test_user
+      password: 2u8hpn
+      version: 2.0.1
+  prod:
+    data:
+      username: prod_test_user
+      password: 9evxu2
+      version: 2.0.1
+response_data:
+  stage:
+    data:
+      uid: '4257695934775296'
+      checkStatus: '1'
+      name: '请勿删除'
+  prod:
+    data:
+      uid: '4257861568757760'
+      checkStatus: '1'
+      name: '高照'
+form_data_invalid_user:
+  stage:
+    data:
+      username: stage_test_user_invalid
+      password: 2u8hpn
+      version: 2.0.1
+  prod:
+    data:
+      username: prod_test_user_invalid
+      password: 9evxu2
+      version: 2.0.1
+response_data_invalid_user:
+  stage:
+    data:
+      responseBody:
+        error: '请核实用户名'
+      message: '请核实用户名'
+      code: '10106'
+  prod:
+    data:
+      responseBody:
+        error: '请核实用户名'
+      message: '请核实用户名'
+      code: '10106'
+form_data_invalid_password:
+  stage:
+    data:
+      username: stage_test_user
+      password: 2u8hpn_invalid
+      version: 2.0.1
+  prod:
+    data:
+      username: prod_test_user
+      password: 9evxu2_invalid
+      version: 2.0.1
+response_data_invalid_password:
+  stage:
+    data:
+      responseBody:
+        error: '当前密码，咋总是不对勒'
+      message: '当前密码，咋总是不对勒'
+      code: '10101'
+  prod:
+    data:
+      responseBody:
+        error: '当前密码，咋总是不对勒'
+      message: '当前密码，咋总是不对勒'
+      code: '10101'
