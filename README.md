@@ -74,4 +74,6 @@ yyyy: allure测试报告的输出目录
 ##生成报告：  
 allure generate xxxx -o yyyy  
 xxxx: allure测试报告的输出目录  
-yyyy: allure-html测试报告的输出目录  
+yyyy: allure-html测试报告的输出目录
+
+commit
